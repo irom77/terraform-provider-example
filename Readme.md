@@ -11,15 +11,17 @@ Consists of several components
         *  server, which is the implementation of the webserver
         *  client, which is a client that can be used to programatically interact with the server.
 
+* tf 0.13
+
+mkdir -p .terraform.d/github.com/irom77/example/0.1/darwin_amd64/         
+
 ## Requirements
 
 * go => 1.11
 
 This project used Go Modules, so you will need to enable them using `export GO111MODULE=on`, otherwise your go commands (run, build and test) will fail.
 
-* tf 0.13
 
-mkdir -p .terraform.d/github.com/irom77/example/0.1/darwin_amd64/ 
 
 ## API
 

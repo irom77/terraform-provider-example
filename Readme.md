@@ -11,9 +11,29 @@ Consists of several components
         *  server, which is the implementation of the webserver
         *  client, which is a client that can be used to programatically interact with the server.
 
-* tf 0.13
+## Terraform 0.1313 upgrade
 
-mkdir -p .terraform.d/github.com/irom77/example/0.1/darwin_amd64/         
+* terraform 0.13upgrade
+
+mkdir -p /Users/irekromaniuk/.terraform.d/plugins/github.com/irom77/example/0.1/darwin_amd64     
+
+➜  terraform-provider-example git:(master) ✗ terraform init 
+
+```          
+Initializing the backend...
+Initializing provider plugins...
+- Using previously-installed github.com/irom77/example v0.1.0
+...
+```
+
+➜  terraform-provider-example git:(master) ✗ terraform plan             
+
+```
+Error: Could not load plugin
+...
+Failed to instantiate provider "github.com/irom77/example" to obtain schema:
+Incompatible API version with plugin. Plugin version: 4, Client versions: [5]
+```
 
 ## Requirements
 

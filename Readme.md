@@ -17,6 +17,10 @@ Consists of several components
 
 This project used Go Modules, so you will need to enable them using `export GO111MODULE=on`, otherwise your go commands (run, build and test) will fail.
 
+* tf 0.13
+
+mkdir -p .terraform.d/github.com/irom77/example/0.1/darwin_amd64/ 
+
 ## API
 
 The API is pretty simple, it just stores items which have a name, description and some tags, tags are a slice of strings. Name serves as the id for the Item. 
